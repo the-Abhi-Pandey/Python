@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Comparison Result</title>
+</head>
+<body>
+    <h1>Comparison Result</h1>
+    <div>{{ diff_html|safe }}</div>
+    <form action="/" method="post">
+        <input type="hidden" name="action" value="export">
+        <input type="hidden" name="export_name" value="{{ export_name }}">
+        <button type="submit">Export Data</button>
+    </form>
+    <a href="/">Compare Again</a>
+</body>
+</html>

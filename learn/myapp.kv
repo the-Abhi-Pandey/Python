@@ -1,0 +1,17 @@
+<ExpenseLayout>:
+    orientation: "vertical"
+    spacing: 10
+
+    TextInput:
+        id: item_input
+    TextInput:
+        id: amount_input
+    TextInput:
+        id: date_input
+    TextInput:
+        id: comment_input
+    Button:
+        text: "Add Expense"
+        on_press: root.add_expense(None)
+    Label:
+        id: expense_list

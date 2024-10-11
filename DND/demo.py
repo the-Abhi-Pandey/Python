@@ -1,1 +1,1 @@
-print("hello Abhishek")
+print(22//4)
